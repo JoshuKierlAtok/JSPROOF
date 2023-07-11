@@ -13,6 +13,6 @@ function mintNFT(brand, collection, name, description) {
 }
 
 mintNFT("IPhone", "IPhone Collection", "IPhone 14 Pro Max", "A line of phone produced by IPhone");
-mintNFT("Mac Book", "Mac Book Collection", "Mac Book Air", "The MacBook is carved out of solid aluminum, thus giving it a distinctive look and a grayish-white hue");
+mintNFT("Mac Book", "Mac Book Collection", "Mac Book Air", "The MacBook is Apple's third laptop computer family, introduced in 2006.");
 
 console.log(nftArray); 
