@@ -1,0 +1,18 @@
+let nftArray = [];
+
+function mintNFT(brand, collection, name, description) {
+ 
+  let nft = {
+    brand: brand,
+    collection: collection,
+    name: name,
+    description: description
+  };
+
+  nftArray.push(nft);
+}
+
+mintNFT("IPhone", "IPhone Collection", "IPhone 14 Pro Max", "A line of phone produced by IPhone");
+mintNFT("Mac Book", "Mac Book Collection", "Mac Book Air", "The MacBook is carved out of solid aluminum, thus giving it a distinctive look and a grayish-white hue");
+
+console.log(nftArray); 
