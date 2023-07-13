@@ -1,18 +1,36 @@
-let nftArray = [];
+const NFTs = [
+    {
+        name: "Dior",
+        size: "Small",
+        properties: "Canvas",
+        color: "Black",
+        brand: "Dior"
+    }
+];
 
-function mintNFT(brand, collection, name, description) {
- 
-  let nft = {
-    brand: brand,
-    collection: collection,
-    name: name,
-    description: description
-  };
-
-  nftArray.push(nft);
+function mintNFT(nft) {
+    NFTs.push(nft);
+    return nft;
 }
 
-mintNFT("IPhone", "IPhone Collection", "IPhone 14 Pro Max", "A line of phone produced by IPhone");
-mintNFT("Mac Book", "Mac Book Collection", "Mac Book Air", "The MacBook is Apple's third laptop computer family, introduced in 2006.");
+function listNFTs() {
+    for (let i = 0; i < NFTs.length; i++) {
+        console.log(NFTs[i]);
+    }
+    console.log("------------------");
+}
 
-console.log(nftArray); 
+function getTotalSupply() {
+    console.log(`Total Supply: ${NFTs.length}`);
+    console.log("------------------");
+}
+
+// Call your functions below this line
+
+listNFTs();
+
+mintNFT({name: "Gucci", size: "Medium", properties: "Leather", color: "Brown", brand: "Gucci"});
+mintNFT({name: "Burberry", size: "Large", properties: "Canvas", color: "Monogram", brand: "Burberry"});
+listNFTs();
+
+getTotalSupply();
